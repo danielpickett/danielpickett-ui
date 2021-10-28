@@ -1,0 +1,11 @@
+{
+  "name": "@danielpickett/such-cool",
+  "version": "0.0.0-alpha.1",
+  "description": "React component that just says \"Such cool!\" for testing purposes",
+  "module": "dist/index.js",
+  "types": "dist/such-cool/src/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ]
+}
