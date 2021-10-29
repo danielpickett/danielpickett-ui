@@ -1,1 +1,1 @@
-export * from './SuchCool'
+export { default as default } from './SuchCool'

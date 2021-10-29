@@ -6,9 +6,10 @@
   ],
   "private": true,
   "scripts": {
-    "clean": "./scripts/clean-component-dists.sh",
-    "build": "yarn clean && rollup -c",
-    "build-watch": "yarn clean && rollup -cw",
+    "clean": "rm -rf packages/components/*/dist",
+    "clean-modules": "rm -rf packages/components/much-wow/node_modules",
+    "build": "rollup -c",
+    "build-watch": "rollup -cw",
     "start-sandbox": "cd apps/sandbox && yarn start"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.11",
     "rollup": "^2.58.3",
     "rollup-plugin-dts": "^4.0.0",
@@ -27,6 +29,8 @@
     "rollup-plugin-scss": "^3.0.0",
     "rollup-plugin-styles": "^3.14.1",
     "rollup-plugin-typescript2": "^0.30.0",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
   }
 }
