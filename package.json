@@ -7,25 +7,18 @@
   "private": true,
   "scripts": {
     "clean": "./scripts/clean-component-dists.sh",
+    "clean-modules": "./scripts/clean-modules.sh",
     "build": "yarn clean && rollup -c",
     "build-watch": "yarn clean && rollup -cw",
     "start-sandbox": "cd apps/sandbox && yarn start"
   },
   "devDependencies": {
-    "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "@babel/preset-typescript": "^7.15.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
     "postcss": "^8.3.11",
     "rollup": "^2.58.3",
-    "rollup-plugin-dts": "^4.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.1",
-    "rollup-plugin-scss": "^3.0.0",
-    "rollup-plugin-styles": "^3.14.1",
     "rollup-plugin-typescript2": "^0.30.0",
     "sass": "^1.43.4"
   }
