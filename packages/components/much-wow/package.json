@@ -4,11 +4,8 @@
   "description": "React component that just says \"Much wow!\" for testing purposes",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "scripts": {
-    "build": "rollup -c"
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.2"
   }
 }
