@@ -1,5 +1,5 @@
 import React from 'react'
-import { MuchWow } from './MuchWow'
+import MuchWow from './MuchWow'
 
 export default {
   title: 'MuchWow',

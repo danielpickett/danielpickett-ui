@@ -4,7 +4,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
 import postcss from 'rollup-plugin-postcss'
 
-const componentNames = ['much-wow', 'such-cool']
+const componentNames = ['much-wow', 'such-cool', 'button']
 
 // rollup.config.js
 /**
