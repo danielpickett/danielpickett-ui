@@ -1,1 +1,1 @@
-export * from "./MuchWow"
+export { default as default } from './MuchWow'
