@@ -11,7 +11,6 @@ const componentNames = ['much-wow', 'such-cool']
  * @type {import('rollup').RollupOptions}
  */
 export default () => {
-<<<<<<< HEAD
   return packages.map((pkg) => {
     const pkgPath = `packages/components/${pkg}`
     const pkgJson = require(`./${pkgPath}/package.json`)
@@ -41,26 +40,4 @@ export default () => {
       ],
     }
   })
-=======
-  return defineConfig(
-    componentNames.map((componentName) => {
-      const path = `packages/components/${componentName}`
-      return {
-        input: `${path}/src/index.ts`,
-        output: {
-          file: `${path}/dist/index.js`,
-          format: 'es',
-          sourcemap: true,
-        },
-        external: ['react'],
-        plugins: [
-          resolve(),
-          commonjs(),
-          typescript({ useTsconfigDeclarationDir: true }),
-          postcss(),
-        ],
-      }
-    })
-  )
->>>>>>> main
 }
