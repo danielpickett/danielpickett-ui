@@ -1,5 +1,5 @@
 import React from 'react'
-import { SuchCool } from './SuchCool'
+import SuchCool from './SuchCool'
 
 export default {
   title: 'SuchCool',
