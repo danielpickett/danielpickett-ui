@@ -14,6 +14,7 @@ export default () => {
     const pkgPath = `packages/components/${pkg}`
     const pkgJson = require(`./${pkgPath}/package.json`)
 
+    // calculate externals
     const externals = pkgJson.peerDependencies
       ? Object.keys(pkgJson.peerDependencies)
       : []
