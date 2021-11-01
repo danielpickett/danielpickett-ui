@@ -11,6 +11,37 @@ const componentNames = ['much-wow', 'such-cool']
  * @type {import('rollup').RollupOptions}
  */
 export default () => {
+<<<<<<< HEAD
+  return packages.map((pkg) => {
+    const pkgPath = `packages/components/${pkg}`
+    const pkgJson = require(`./${pkgPath}/package.json`)
+
+    // calculate externals
+    const externals = pkgJson.peerDependencies
+      ? Object.keys(pkgJson.peerDependencies)
+      : []
+    console.log(`externalized peer deps for ${pkg}`, externals)
+    return {
+      input: `${pkgPath}/src/index.ts`,
+      output: {
+        file: `${pkgPath}/dist/index.js`,
+        format: 'es',
+        sourcemap: true,
+      },
+      external: externals,
+      plugins: [
+        resolve(),
+        commonjs(),
+        typescript({
+          tsconfigOverride: {
+            files: [`${pkgPath}/src/index.ts`],
+          },
+        }),
+        postcss(),
+      ],
+    }
+  })
+=======
   return defineConfig(
     componentNames.map((componentName) => {
       const path = `packages/components/${componentName}`
@@ -31,4 +62,5 @@ export default () => {
       }
     })
   )
+>>>>>>> main
 }
