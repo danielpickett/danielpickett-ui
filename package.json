@@ -6,7 +6,7 @@
   ],
   "private": true,
   "scripts": {
-    "clean": "rm -rf ../packages/components/*/dist",
+    "clean": "./scripts/clean-component-dists.sh",
     "clean-modules": "./scripts/clean-modules.sh",
     "build": "yarn clean && rollup -c",
     "build-watch": "yarn clean && rollup -cw",
