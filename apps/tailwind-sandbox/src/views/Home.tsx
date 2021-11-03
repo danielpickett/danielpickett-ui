@@ -10,14 +10,16 @@ const Home = () => {
           {/* Replace with your content */}
           <div className="px-4 py-6 sm:px-0">
             <div className="border-4 border-dashed border-gray-200 rounded-lg h-96 p-4 text-center text-gray-400">
-              Here goes your content. You can also go the About page.
+              <div className="bg-primary text-white">
+                This text has a background of the 'primary' color.
+              </div>
             </div>
           </div>
           {/* /End replace */}
         </div>
       </main>
     </React.Fragment>
-  );
-};
+  )
+}
 
 export default Home
